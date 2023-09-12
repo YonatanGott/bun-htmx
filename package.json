@@ -1,0 +1,19 @@
+{
+  "name": "elysia-api",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "tw": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css",
+    "tw:dev": "bunx tailwindcss -i ./src/styles.css -o ./tailwind-gen/styles.css --watch"
+  },
+  "dependencies": {
+    "@elysiajs/html": "^0.6.4",
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typed-html": "^3.0.1"
+  },
+  "module": "src/index.js"
+}
